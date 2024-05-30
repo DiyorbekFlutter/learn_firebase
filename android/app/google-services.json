@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "505721694279",
+    "project_id": "learn-firebase-cb67a",
+    "storage_bucket": "learn-firebase-cb67a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505721694279:android:ad702ea051bccabcb36962",
+        "android_client_info": {
+          "package_name": "com.example.learn_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWCHcEBfscRl5bGatHk0YfdJYdAubkbsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
