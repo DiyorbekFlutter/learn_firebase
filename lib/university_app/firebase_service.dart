@@ -16,41 +16,11 @@ final class FirebaseService {
     UserCredential? userCredential = await _googleSignIn();
 
     if(userCredential?.user != null){
-      Roles role = userCredential?.user?.email == "diyorbekflutter@gmail.com"
-          ? Roles.admin
-          : Roles.student;
+      // Roles role = userCredential?.user?.email == "diyorbekflutter@gmail.com"
+      //     ? Roles.admin
+      //     : Roles.student;
 
-      // if(role != Roles.admin && context.mounted){
-      //
-      //
-      //   // bool isStudent = await _isStudent(context);
-      //   // role = isStudent ? Roles.student : Roles.teacher;
-      //
-      //   // if(role == Roles.student){
-      //   //
-      //   //
-      //   //   // StudentModel studentModel = StudentModel(
-      //   //   //   email: "example@gmail.com",
-      //   //   //   name: "Student: ${DateTime.now().month}.${DateTime.now().minute}.${DateTime.now().second}",
-      //   //   //   age: Random().nextInt(150),
-      //   //   //   // sciences: [
-      //   //   //   //   [Sciences.Math, 0],
-      //   //   //   //   [Sciences.English, 0],
-      //   //   //   //   [Sciences.Programming, 0],
-      //   //   //   //   [Sciences.BPM, 0],
-      //   //   //   //   [Sciences.PM, 0],
-      //   //   //   // ]
-      //   //   // );
-      //   //   // await create(Models.students.name, studentModel);
-      //   // } else if(role == Roles.teacher){
-      //   //   TeacherModel teacherModel = TeacherModel(
-      //   //     name: "Teacher: ${DateTime.now().month}.${DateTime.now().minute}.${DateTime.now().second}",
-      //   //     specialty: "unknown"
-      //   //   );
-      //   //
-      //   //   await create(Models.students.name, teacherModel);
-      //   // }
-      // }
+      Roles role = Roles.admin;
 
       userCredential?.user?.updateDisplayName(role.name);
       return role;
